@@ -8,6 +8,7 @@ import baseball.domain.Computer;
 import baseball.validator.BaseballValidator;
 import camp.nextstep.edu.missionutils.Randoms;
 import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class ComputerService {
 
@@ -24,7 +25,7 @@ public class ComputerService {
     }
 
     private String createBaseballNumber() {
-        LinkedHashSet<String> result = new LinkedHashSet<>();
+        Set<String> result = new LinkedHashSet<>();
 
         while (result.size() < BASEBALL_NUMBERS_SIZE) {
             result.add(selectRandomNumber());
