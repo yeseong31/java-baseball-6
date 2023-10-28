@@ -35,7 +35,8 @@ public class BaseballController {
     }
 
     private void playGame(Computer computer) {
-        int balls, strikes = 0;
+        int balls;
+        int strikes = 0;
 
         while (strikes != BASEBALL_THREE_STRIKES) {
 
